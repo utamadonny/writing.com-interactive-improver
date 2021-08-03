@@ -12,7 +12,7 @@
 /* eslint-env jquery */
 //Refresh a "Heavy server volume" page half a second after it loads
 
-var test = /Due to resource limitations/.test(document.body.innerHTML);
+var test = /<i>temporarily<\/i>\ unavailable/.test(document.body.innerHTML);
 if (test)
 {
     setTimeout(function() {
